@@ -1,14 +1,16 @@
-# 🤖 AI Chatbot using n8n & Google Gemini
+# 🤖 n8n Gemini AI Chatbot
 
-A simple AI chatbot workflow built using **n8n** and **Google Gemini** with conversation memory support.
+An AI-powered chatbot workflow built using **n8n** and **Google Gemini**, featuring conversational memory for context-aware interactions.
+
+---
 
 ## ✨ Features
 
-- AI-powered chatbot
-- Google Gemini integration
-- Conversation memory
-- Easy to import into n8n
-- Beginner-friendly workflow
+- 🤖 AI-powered chatbot using Google Gemini
+- 💬 Conversational memory support
+- ⚡ Easy-to-import n8n workflow
+- 🔒 Sanitized workflow (no sensitive credentials)
+- 🚀 Beginner-friendly and customizable
 
 ---
 
@@ -21,88 +23,81 @@ A simple AI chatbot workflow built using **n8n** and **Google Gemini** with conv
 
 ---
 
-## 📂 Workflow
+## 📂 Project Structure
 
-The workflow consists of:
+```
+.
+├── n8n-gemini-ai-chatbot.json
+├── README.md
+├── LICENSE
+└── screenshots/
+    └── n8n-gemini-ai-chatbot.png
+```
 
-1. Chat Trigger
-2. AI Agent
-3. Google Gemini Chat Model
-4. Simple Memory
+---
 
-The chatbot receives a message, sends it to Gemini, maintains conversation history, and returns a response.
+## 📸 Workflow Preview
+
+![n8n Gemini AI Chatbot Workflow](./screenshots/n8n-gemini-ai-chatbot.png)
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/your-repository.git
+git clone https://github.com/your-github-username/n8n-gemini-ai-chatbot.git
 ```
 
-### 2. Import the workflow
+### 2. Import the Workflow
 
-Open n8n
+1. Open **n8n**.
+2. Click **Import from File**.
+3. Select **n8n-gemini-ai-chatbot.json**.
 
-Go to:
+### 3. Configure Google Gemini Credentials
 
-```
-Workflows → Import from File
-```
+Create your own **Google Gemini API** credentials in n8n and assign them to the **Google Gemini Chat Model** node.
 
-Select:
+### 4. Activate the Workflow
 
-```
-template2_sanitized.json
-```
-
-### 3. Configure Credentials
-
-Create a new **Google Gemini API** credential inside n8n.
-
-Replace the placeholder credential with your own.
-
-### 4. Activate Workflow
-
-Save the workflow and activate it.
-
----
-
-## 📁 Project Structure
-
-```
-.
-├── template2_sanitized.json
-├── screenshots/
-│   └── chatbot-workflow.png
-└── README.md
-```
-
----
-
-## 📸 Workflow Screenshot
-
-> Replace the image name below if yours is different.
-
-```markdown
-![Workflow](./screenchorts/workflow.png)
-```
+Save and activate the workflow. Your AI chatbot is now ready to use.
 
 ---
 
 ## 🔒 Security
 
-This repository does **not** contain:
+This workflow has been sanitized before publishing.
+
+The following sensitive information has been removed:
 
 - API Keys
-- Credential IDs
+- Credential References
 - Webhook IDs
 - Instance IDs
-- Sensitive configuration
+- Workflow IDs
+- Version IDs
 
-All sensitive values have been removed before publishing.
+You'll need to configure your own credentials after importing the workflow.
+
+---
+
+## 🎯 Use Cases
+
+- AI Chat Assistant
+- Customer Support Bot
+- FAQ Bot
+- Personal Productivity Assistant
+- Learning n8n AI Automation
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+Feel free to fork the repository, open issues, or submit pull requests to improve the project.
 
 ---
 
